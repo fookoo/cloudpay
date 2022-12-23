@@ -1,0 +1,27 @@
+{
+  "name": "cloudpay",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "client": "yarn workspace @cloudpay/client dev",
+    "client:build": "yarn workspace @cloudpay/client build",
+    "server": "yarn workspace @cloudpay/server start",
+    "server:dev": "yarn workspace @cloudpay/server dev",
+    "server:build": "yarn workspace @cloudpay/server build",
+    "types:build": "yarn workspace @cloudpay/types build",
+    "types:dev": "yarn workspace @cloudpay/types dev",
+    "build": "concurrently --kill-others-on-fail \"yarn server:build\"  \"yarn client:build\"  \"yarn types:build\"",
+    "dev": "concurrently --kill-others-on-fail \"yarn run server:dev\"  \"yarn client\"  \"yarn types:dev\""
+  },
+  "workspaces": [
+    "./packages/*"
+  ],
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
