@@ -1,17 +1,9 @@
 import express, { Request, Response } from 'express';
-import { Entry } from '@cloudpay/types'
+import {entries} from "./companies.mock";
 
 const router = express.Router()
 
 router.get('/', (req: Request, res: Response) => {
-    const entries: Entry[] = [
-        {
-            id: 'id-1',
-            name: 'Loremipsum',
-            country: "Norway",
-            services: []
-        }
-    ]
     res.json(entries)
 })
 
