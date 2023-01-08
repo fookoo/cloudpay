@@ -12,11 +12,13 @@
     "server:build": "yarn workspace @cloudpay/server build",
     "types:build": "yarn workspace @cloudpay/types build",
     "types:dev": "yarn workspace @cloudpay/types dev",
-    "build": "concurrently --kill-others-on-fail \"yarn server:build\"  \"yarn client:build\"  \"yarn types:build\"",
-    "dev": "concurrently --kill-others-on-fail \"yarn run server:dev\"  \"yarn client\"  \"yarn types:dev\""
+    "build": "concurrently --kill-others-on-fail \"yarn server:build\"  \"yarn client:build\" \"yarn types:build\"",
+    "dev3": "concurrently --kill-others-on-fail \"yarn types:dev\" \"yarn run client\"",
+    "dev2": "concurrently --kill-others-on-fail \"yarn types:dev\" \"yarn run server:dev\"",
+    "dev": "concurrently --kill-others-on-fail \"yarn types:dev\" \"yarn run server:dev\" \"yarn client\""
   },
   "workspaces": [
-    "./packages/*"
+    "packages/*"
   ],
   "dependencies": {
     "concurrently": "^7.6.0"

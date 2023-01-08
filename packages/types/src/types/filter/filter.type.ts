@@ -1,3 +1,5 @@
+import { ServicesEnum } from '../entry/entry.type'
+
 export enum ConditionEnum {
   Equal,
   NotEqual,
@@ -11,5 +13,5 @@ export enum ConditionEnum {
 export interface IFilter {
   field: string
   condition: ConditionEnum
-  value: string | number
+  value: string | number | ServicesEnum[]
 }

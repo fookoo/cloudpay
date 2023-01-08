@@ -1,4 +1,4 @@
-import { Entry } from '@cloudpay/types'
+import { Entry, ServicesEnum } from '@cloudpay/types'
 
 export const entries: Entry[] = [
   {
@@ -6,7 +6,7 @@ export const entries: Entry[] = [
     logo: 'https://fakeimg.pl/100x40',
     name: 'Centen Information Systems',
     country: 'Germany',
-    services: ['Payroll', 'Treasury', 'Implementation', 'Bank Payments']
+    services: [ServicesEnum.Payroll, ServicesEnum.Treasury, ServicesEnum.Implementation, ServicesEnum.BankPayments]
   },
   {
     id: 'id-2',
@@ -20,55 +20,55 @@ export const entries: Entry[] = [
     logo: 'https://fakeimg.pl/100x40',
     name: 'Charli Solutions (P) Limited',
     country: 'Haiti',
-    services: ['Treasury', 'Bank Payments']
+    services: [ServicesEnum.Treasury, ServicesEnum.BankPayments]
   },
   {
     id: 'id-4',
     logo: 'https://fakeimg.pl/100x40',
     name: 'Cherubs Software Solutions',
     country: 'Spain',
-    services: ['Payroll', 'Treasury', 'Bank Payments']
+    services: [ServicesEnum.Payroll, ServicesEnum.Treasury, ServicesEnum.BankPayments]
   },
   {
     id: 'id-5',
     logo: 'https://fakeimg.pl/100x40',
     name: 'CK Technologies',
     country: 'Poland',
-    services: ['Payroll', 'Treasury', 'Implementation', 'Bank Payments']
+    services: [ServicesEnum.Payroll, ServicesEnum.Treasury, ServicesEnum.Implementation, ServicesEnum.BankPayments]
   },
   {
     id: 'id-6',
     name: 'Clara Technologies',
     logo: 'https://fakeimg.pl/100x40',
     country: 'Sweden',
-    services: ['Payroll', 'Bank Payments']
+    services: [ServicesEnum.Payroll, ServicesEnum.BankPayments]
   },
   {
     id: 'id-7',
     name: 'Complete Object Solutions',
     logo: 'https://fakeimg.pl/100x40',
     country: 'Georgia',
-    services: ['Treasury', 'Implementation']
+    services: [ServicesEnum.Treasury, ServicesEnum.Implementation]
   },
   {
     id: 'id-8',
     name: 'Convex Technologies',
     logo: 'https://fakeimg.pl/100x40',
     country: 'Macedonia',
-    services: ['Payroll', 'Treasury', 'Bank Payments']
+    services: [ServicesEnum.Payroll, ServicesEnum.Treasury, ServicesEnum.BankPayments]
   },
   {
     id: 'id-9',
     name: 'Copious IT Services',
     logo: 'https://fakeimg.pl/100x40',
     country: 'France',
-    services: ['Implementation', 'Bank Payments']
+    services: [ServicesEnum.Implementation, ServicesEnum.BankPayments]
   },
   {
     id: 'id-10',
     name: 'Digitech Solution',
     logo: 'https://fakeimg.pl/100x40',
     country: 'France',
-    services: ['Payroll', 'Treasury', 'Implementation', 'Bank Payments']
+    services: [ServicesEnum.Payroll, ServicesEnum.Treasury, ServicesEnum.Implementation, ServicesEnum.BankPayments]
   }
 ]

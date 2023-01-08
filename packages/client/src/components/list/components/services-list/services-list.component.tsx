@@ -1,8 +1,9 @@
 import React from 'react'
 import { Chip, Stack } from '@mui/material'
+import { ServicesEnum } from '@cloudpay/types'
 
 interface IServicesListProps {
-  services: string[]
+  services: ServicesEnum[]
 }
 
 export const ServicesList: React.VFC<IServicesListProps> = ({ services = [] }) => {
