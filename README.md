@@ -23,3 +23,15 @@ yarn dev
 client is running on: http://localhost:5173
 
 backend is running on: http://localhost:8080
+
+
+# Test
+
+I have introduced simple test to server package
+
+to run them:
+
+```
+cd packages/server
+yarn run test
+```
