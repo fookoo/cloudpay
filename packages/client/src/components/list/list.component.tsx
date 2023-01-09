@@ -9,11 +9,10 @@ import { HeaderEditServices } from './components/header-edit-services/header-edi
 
 interface IListProps {
   items: Entry[]
-  filters: IFilter[]
   onFilter?: (filters: IFilter[]) => void
 }
 
-export const List: React.FC<IListProps> = ({ items, filters, onFilter }) => {
+export const List: React.FC<IListProps> = ({ items, onFilter }) => {
   const [nameFilter, setNameFilter] = useState('')
   const [servicesFilter, setServicesFilter] = useState<ServicesEnum[]>([])
 

@@ -1,5 +1,5 @@
+import React, { useEffect, useState } from 'react'
 import { Entry, IFilter } from '@cloudpay/types'
-import { useEffect, useState } from 'react'
 import { CompaniesService } from '../../services/companies/companies.service'
 import { List } from '../list/list.component'
 import { Box } from '@mui/material'
@@ -20,7 +20,7 @@ const App: React.VFC = () => {
 
   return (
     <Box sx={{ flexGrow: 1, height: '100%' }}>
-      <List filters={filters} items={companies} onFilter={setFilters} />
+      <List items={companies} onFilter={setFilters} />
     </Box>
   )
 }

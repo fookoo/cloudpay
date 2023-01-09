@@ -1,0 +1,9 @@
+node_modules
+
+packages/client/node_modules
+packages/server/node_modules
+packages/types/node_modules
+
+packages/client/dist
+packages/server/dist
+packages/types/dist
